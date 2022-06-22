@@ -8,10 +8,10 @@ const Details = ({title}) => {
     const classes = useStyles()
   return (
     <Card className={title === 'Income' ? classes.income : classes.expense}>
-    <CardHeader title={title}/>
+    <CardHeader title={title} subheader={subheader} />
     <CardContent>
-      <Typography variant="h5">$50</Typography>
-      {/* <Doughnut data={chartData} /> */}
+      <Typography variant="h5">${total}</Typography>
+      <Doughnut data={chartData} />
     </CardContent>
   </Card>
   )

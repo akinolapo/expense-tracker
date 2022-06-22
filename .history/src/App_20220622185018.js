@@ -16,7 +16,7 @@ const App = () => {
                 Main
             </Grid>
             <Grid item xs={12} sm={4}>
-                <Details title="Expense"/>
+                <Details title="Ex"/>
             </Grid>
         </Grid>
     </div>
