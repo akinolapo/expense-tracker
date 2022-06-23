@@ -14,14 +14,10 @@ const Main = () => {
                     {/* InfoCard */}
                     Try saying: Add income for $100 in Category Salary for Monday ...
                 </Typography>
-                <Divider />
+                <Divider/>
                 {/* Form */}
             </CardContent>
-            <CardContent className={classes.CardContent}>
-                <Grid container spacing={2}>
-                    
-                </Grid>
-            </CardContent>
+            <CardContent
         </Card>
     )
 }

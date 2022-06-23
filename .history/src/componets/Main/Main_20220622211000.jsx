@@ -11,16 +11,9 @@ const Main = () => {
             <CardContent>
                 <Typography align='center' variant='h5'>Total Balance $100</Typography>
                 <Typography variant='subtitle' style={{ lineHeight: '1.5em, marginTop: 20px,' }}>
-                    {/* InfoCard */}
-                    Try saying: Add income for $100 in Category Salary for Monday ...
+                    {/* <InfoCard/> */}
+                    Try saying: Add
                 </Typography>
-                <Divider />
-                {/* Form */}
-            </CardContent>
-            <CardContent className={classes.CardContent}>
-                <Grid container spacing={2}>
-                    
-                </Grid>
             </CardContent>
         </Card>
     )

@@ -18,9 +18,7 @@ const Main = () => {
                 {/* Form */}
             </CardContent>
             <CardContent className={classes.CardContent}>
-                <Grid container spacing={2}>
-                    
-                </Grid>
+                <Grid container spac></Grid>
             </CardContent>
         </Card>
     )
