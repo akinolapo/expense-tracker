@@ -10,6 +10,8 @@ const List = () => {
     const classes = useStyles()
     const {deleteTransaction, transactions} = useContext(ExpenseTrackerContext)
 
+
+ 
   return (
     <MUIList dense={false} className={classes.list}>
         {transactions.map((transaction) =>(
