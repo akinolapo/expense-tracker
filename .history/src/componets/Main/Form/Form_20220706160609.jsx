@@ -49,7 +49,7 @@ const Form = () => {
         <Grid itme xs={6}>
             <FormControl fullWidth>
                 <InputLabel>Category</InputLabel>
-                <Select value={formData.category} onChange={(e) => setFormData({ ...formData, category: e.target.value})}>
+                <Select value={formData.category} onChange={(e) => setFormData({ ...formData, category: formatDate(e.target.value)})}>
                    {selectedCategories.map((c) => <MenuItem key={c.type} value={c.type}>{c.type}</MenuItem>)}
                 </Select>
             </FormControl>
@@ -58,7 +58,7 @@ const Form = () => {
             <TextField type="number" label="Amount" fullWidth value={formData.amount} onChange={(e) => setFormData({ ...formData, amount: e.target.value})}/>
         </Grid>
         <Grid item xs={6}>
-            <TextField type="date" label="Date" fullWidth value={formData.date} onChange={(e) => setFormData({ ...formData, date: formatDate(e.target.value)})}/>
+            <TextField type="date" label="Date" fullWidth value={formData.date} onChange={(e) => setFormData({ ...formData, date: e.target.value})}/>
         </Grid>
         <Button className={classes.button} variant="outlined" color="primary" fullWidth onClick={createTransaction}>Create</Button>
     </Grid>
