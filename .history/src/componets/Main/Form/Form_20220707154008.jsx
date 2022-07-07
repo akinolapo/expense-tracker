@@ -1,8 +1,8 @@
-import React, {useState, useContext, useEffect} from 'react'
+import React, {useState, useContext} from 'react'
 import { TextField, Typography, Grid, Button, FormControl, InputLabel, Select, MenuItem } from '@material-ui/core'
 import { ExpenseTrackerContext } from '../../../context/context'
 import {v4 as uuidv4} from 'uuid'
-import { useSpeechContext } from '@speechly/react-client'
+import {}
 
 import formatDate from '../../../utils/formatDate'
 import useStyles from './styles'
@@ -19,7 +19,6 @@ const Form = () => {
     const classes = useStyles()
     const [formData, setFormData] = useState(initialState)
     const { addTransaction} = useContext(ExpenseTrackerContext)
-    const {segment} = useSpeechContext()
 
     const createTransaction = () => {
         const transaction = { ...formData, amount: Number(formData.amount), id: uuidv4()}
@@ -27,14 +26,6 @@ const Form = () => {
         addTransaction(transaction)
         setFormData(initialState)
     }
-
-    useEffect(() =>{
-        if(segment){
-            if(segment.intent.intent === 'add_expense'){
-                setFormData({...formData, type: 'expense'})
-            }
-        }
-    }, [segment])
 
     // console.log(formData)
 
@@ -44,7 +35,7 @@ const Form = () => {
     <Grid container spacing={2}>
         <Grid item xs={12}>
             <Typography align='center' variant='subtitle2' gutterBottom>
-                {segment && segment.words.map((w) => w.value).join(" ")}
+                ...
             </Typography>
         </Grid>
         <Grid item xs={6}>

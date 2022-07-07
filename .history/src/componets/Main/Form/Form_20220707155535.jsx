@@ -1,4 +1,4 @@
-import React, {useState, useContext, useEffect} from 'react'
+import React, {useState, useContext, useE} from 'react'
 import { TextField, Typography, Grid, Button, FormControl, InputLabel, Select, MenuItem } from '@material-ui/core'
 import { ExpenseTrackerContext } from '../../../context/context'
 import {v4 as uuidv4} from 'uuid'
@@ -27,14 +27,6 @@ const Form = () => {
         addTransaction(transaction)
         setFormData(initialState)
     }
-
-    useEffect(() =>{
-        if(segment){
-            if(segment.intent.intent === 'add_expense'){
-                setFormData({...formData, type: 'expense'})
-            }
-        }
-    }, [segment])
 
     // console.log(formData)
 

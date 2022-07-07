@@ -29,11 +29,7 @@ const Form = () => {
     }
 
     useEffect(() =>{
-        if(segment){
-            if(segment.intent.intent === 'add_expense'){
-                setFormData({...formData, type: 'expense'})
-            }
-        }
+        if(segment)
     }, [segment])
 
     // console.log(formData)
