@@ -5,7 +5,8 @@ import { ExpenseTrackerContext } from "./context/context";
 
 import { incomeCategories, expenseCategories, resetCategories } from "./constants/categories";
 
-import Chart from 'chart.js/auto';
+import {Chart, ArcElement} from 'chart.js'
+Chart.register(ArcElement);
 
 function useTransactions(title) {
     resetCategories();

@@ -6,6 +6,8 @@ import { ExpenseTrackerContext } from "./context/context";
 import { incomeCategories, expenseCategories, resetCategories } from "./constants/categories";
 
 import Chart from 'chart.js/auto';
+chart.canvas.parentNode.style.height = '128px';
+chart.canvas.parentNode.style.width = '128px';
 
 function useTransactions(title) {
     resetCategories();

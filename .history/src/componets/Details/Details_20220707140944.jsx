@@ -13,10 +13,10 @@ const Details = ({title}) => {
   return (
     <Card className={title === 'Income' ? classes.income : classes.expense}>
     <CardHeader title={title}/>
-    <CardContent>
+    {/* <CardContent>
       <Typography variant="h5">${total}</Typography>
       <Doughnut data={chartData}/>
-    </CardContent>
+    </CardContent> */}
   </Card>
   )
 }

@@ -16,6 +16,8 @@ const Details = ({title}) => {
     <CardContent>
       <Typography variant="h5">${total}</Typography>
       <Doughnut data={chartData}/>
+      chart.canvas.parentNode.style.height = '128px';
+chart.canvas.parentNode.style.width = '128px';
     </CardContent>
   </Card>
   )
