@@ -22,13 +22,8 @@ const useTransactions = (title) => {
 
     const chartData = {
         datasets: [{
-            data: filteredCategories.map((c) => c.amount),
-            backgroundColor: filteredCategories.map((c) => c.color)
-        }],
-        labels: filteredCategories.map((c) => c.type)
+            data:
+            background
+        }]
     }
-
-    return { filteredCategories, total, chartData}
 }
-
-export default useTransactions

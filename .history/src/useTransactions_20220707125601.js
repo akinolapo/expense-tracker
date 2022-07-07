@@ -30,5 +30,3 @@ const useTransactions = (title) => {
 
     return { filteredCategories, total, chartData}
 }
-
-export default useTransactions

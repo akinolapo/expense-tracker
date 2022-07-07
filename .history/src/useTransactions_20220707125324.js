@@ -22,13 +22,7 @@ const useTransactions = (title) => {
 
     const chartData = {
         datasets: [{
-            data: filteredCategories.map((c) => c.amount),
-            backgroundColor: filteredCategories.map((c) => c.color)
-        }],
-        labels: filteredCategories.map((c) => c.type)
+            import { BiData } from '@react-icons/all-files/bi/BiData';
+        }]
     }
-
-    return { filteredCategories, total, chartData}
 }
-
-export default useTransactions
