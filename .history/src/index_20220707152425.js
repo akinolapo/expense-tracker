@@ -7,10 +7,7 @@ import App from './App';
 import './index.css'
 
 ReactDom.render(
-    <SpeechProvider>
-        <Provider>
-            <App />
-        </Provider>
-    </SpeechProvider>,
-    document.getElementById('root')
-);
+<SpeechProvider>
+    <Provider>
+        <App />
+    </Provider></SpeechProvider>, document.getElementById('root'));

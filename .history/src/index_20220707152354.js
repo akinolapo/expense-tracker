@@ -6,11 +6,4 @@ import { Provider } from "./context/context";
 import App from './App';
 import './index.css'
 
-ReactDom.render(
-    <SpeechProvider>
-        <Provider>
-            <App />
-        </Provider>
-    </SpeechProvider>,
-    document.getElementById('root')
-);
+ReactDom.render(<SpeechProvider></SpeechProvider><Provider><App /></Provider>, document.getElementById('root'));
