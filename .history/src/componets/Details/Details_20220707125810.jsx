@@ -8,7 +8,7 @@ import { Title } from '@material-ui/icons'
 
 const Details = ({title}) => {
     const classes = useStyles()
-    const {total, chartData} = useTransactions(title)
+    const {total, chartData} = useTransactions(Title)
 
   return (
     <Card className={title === 'Income' ? classes.income : classes.expense}>
